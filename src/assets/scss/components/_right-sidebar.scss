@@ -1,0 +1,38 @@
+.right__col {
+	display: flex
+}
+.slider {
+	display: flex;
+	flex-grow: 1;
+}
+.sidebar__headline {
+	display: flex;
+  flex: 0 0 45%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.sidebar__scroll {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex: 0 0 10%;
+}
+.sidebar__headline--wrapper {
+	position: absolute;
+	bottom: 50%;
+	display: flex;
+	width: 200px;
+	margin: 0 auto;
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	justify-content: center;
+	align-items: center;
+}
+.sidebar__headline--wrapper span {
+	font-family: 'GillSansC';
+	font-size: 28px;
+	font-weight: bold;
+	font-style: normal;
+	text-transform: uppercase;
+}

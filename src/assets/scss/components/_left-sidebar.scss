@@ -10,7 +10,7 @@
 .left__col--wrapper {
     position: absolute;
     width: 200px;
-    bottom: 50%;
+    bottom: 0%;
     display: flex;
     margin: 0 auto;
     transform: rotate(-90deg);
@@ -48,13 +48,7 @@
     width: 100%;
     text-decoration: none;
 }
-.logo {
-    flex: 0 0 70%;
-    &__wrapper {
-      height: 175px;
-      line-height: 175px;
-    }
-}
+
 .tel__gray {
     color: $gray !important;
 }

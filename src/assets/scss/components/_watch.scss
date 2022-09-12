@@ -196,8 +196,8 @@
 .d-flex {
 	display: flex;
 	align-items: center;
-	margin-top: 80px;
 	position: relative;
+	flex: 1;
 }
 .video-open {
 	outline: medium none !important;
@@ -246,4 +246,7 @@
 }
 .w-trailor {
 	margin-left: 1rem !important;
+	font-family: 'GillSansC';
+  font-weight: 500;
+  font-style: normal;
 }

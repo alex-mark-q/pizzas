@@ -2,6 +2,10 @@
 	position: relative;
 	display: inline-flex;
 	vertical-align: middle;
+	justify-content: center;
+	font-family: 'GillSansLightC';
+	font-weight: normal;
+	font-style: normal;
 	&__wrapper {
 		position: relative;
     display: inline-block;
@@ -28,15 +32,23 @@
 	  height: 17px;
 	  width: 17px;
 	  font-size: .70rem;
-	  right: 0;
-	  border-radius: 50%;
+	  top: -8px;
+	  border-radius: 100%;
 	  font-weight: 900;
 	  line-height: 155%;
 	  text-align: center;
 	  color: #fff;
+		left: 50%;
+    margin-right: -50%;
+    transform: translate(90%, 10%);
 	}
 	&__cart--text {
 		display: flex;
   	transform: rotate(-90deg);
+  	justify-content: center;
+  	text-transform: uppercase;
+    font-family: 'GillSansLightC';
+    font-weight: normal;
+    font-style: normal;
 	}
 }

@@ -6,19 +6,11 @@ body, html {
 img, video {
   max-width: 100%;
 }
-.main__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  // @include row-flex();
-}
+
 .panel__bg {
   background-color: #ffffff !important;
 }
-.main__pizzas {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+
 .col-lg-12 {
   flex: 0 0 auto;
   @include size(12);

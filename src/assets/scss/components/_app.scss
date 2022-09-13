@@ -1,0 +1,20 @@
+.app {
+	@include size(12);
+	&__content {
+		flex-flow: column;
+    display: flex;
+    justify-content: center;
+	}
+	&__layout {
+		display: flex;
+	}
+	&__services {
+		flex: 2;
+    display: flex;
+	}
+	&__slider {
+		flex: 3;
+    display: flex;
+    align-items: center;
+	}
+}

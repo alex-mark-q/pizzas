@@ -197,10 +197,10 @@
 	display: flex;
 	align-items: center;
 	position: relative;
-	flex: 1;
 }
 .video-open {
 	outline: medium none !important;
+	z-index: 99;
 }
 .video-open img {
 	width: 30px;
@@ -245,8 +245,10 @@
   transition: all 1s ease 0s;
 }
 .w-trailor {
-	margin-left: 1rem !important;
-	font-family: 'GillSansC';
-  font-weight: 500;
+	margin-left: 2rem !important;
+	font-family: 'GillSansCondC';
+  font-weight: 300;
   font-style: normal;
+  font-size: 22px;
+  letter-spacing: 2px;
 }

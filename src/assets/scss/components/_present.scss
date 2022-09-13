@@ -1,0 +1,27 @@
+.present {
+	display: flex;
+	justify-content: center;
+	flex-flow: column;
+	color: #fff;
+	&__wrapper {
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		@include size(12);
+	}
+	&__header {
+		flex: 1;
+	}
+	&__layout {
+		flex: 6;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+.present-view {
+	&__container {
+		max-width: 555px;
+		margin-top: -100px;
+	}
+}

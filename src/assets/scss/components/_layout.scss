@@ -1,0 +1,26 @@
+.layout {
+	display: flex;
+	flex-direction: row;
+	&__services {
+    display: flex;
+		@include size(6);
+    background-color: #F0971E;
+    flex: 4;
+    justify-content: center;
+		@include media('large') {
+	    flex: 4;
+	  }
+	  @include media-down('large') {
+	    flex: 2;
+	  }
+	}
+	&__slider {
+		flex: 3;
+    display: flex;
+    align-items: center;
+		@include size(5);
+		@include media-down('large') {
+	    flex: 2;
+	  }
+	}
+}

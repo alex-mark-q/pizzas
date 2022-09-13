@@ -3,27 +3,30 @@
   height: 100%;
 }
 .swiper__wrapper {
-  position: absolute;
+  position: relative;
   width: 900px;
-  left: -350px;
+  left: -150px;
   display: flex;
+  @include media-down('large') {
+    width: 650px;
+  }
+  @include media('mlarge') {
+    width: 700px;
+  }
+  @include media('xlarge') {
+    left: -15rem;
+    width: 850px;
+  }
+  @include media('xxlarge') {
+    left: -13rem;
+  }
 }
 .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: none;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
   align-items: center;
 }
 
@@ -36,11 +39,14 @@
     object-fit: cover;
     width: 100%;
   }
-  @include media('mlarge') {
-    width: 80%;
-  }
   @include media('large') {
     width: 90%;
+  }
+  @include media('xlarge') {
+    width: 95%;
+  }
+  @include media('xxlarge') {
+    width: 100%;
   }
 }
 .slide__wrapper {

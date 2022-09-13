@@ -62,10 +62,7 @@ $fields: 0.9375rem;
     #{$name}: $value;
   }
 }
-@mixin size($n){
-  $val: 100% / $columns * $n;
-  width: #{calc(#{$val} - #{$offset})};
-}
+
 @mixin xl($name, $value){
   @media screen and (min-width: $break_xl){
       #{$name}: $value;

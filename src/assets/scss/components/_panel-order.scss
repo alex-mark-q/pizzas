@@ -1,7 +1,6 @@
 .panel {
 	display: flex;
 	flex-direction: column;
-	padding: 10rem 4rem 2rem;
 	&__hero {
 		display: flex;
 	}
@@ -21,7 +20,7 @@
 	}
 	&__popular {
 		display: flex;
-		justify-content: center;
+		justify-content: flex-start;
 		align-items: center;
 		@include size(4);
 		height: 20rem;
@@ -60,6 +59,8 @@
 	}
 }
 .popular__menu {
+	margin: 0;
+	padding: 0;
 	display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -72,6 +73,8 @@
 }
 .cost__menu {
 	display: flex;
+	margin: 50px 0;
+	padding: 0;
 }
 .header__title {
 	font-family: 'GillSansCondC';

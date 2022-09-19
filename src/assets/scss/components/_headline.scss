@@ -11,11 +11,11 @@
 }
 .headline__wrapper span {
 	text-transform: uppercase;
-	@include media('large') {
-    font-size: 120px;
-  }
-	@include media('medium') {
+	@include media-down('medium') {
     font-size: 100px;
+  }
+  @include media('large') {
+    font-size: 120px;
   }
 }
 .headline__wrapper p {

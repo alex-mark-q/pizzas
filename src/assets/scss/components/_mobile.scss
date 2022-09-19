@@ -1,9 +1,7 @@
 .mobile {
-  @include media('medium') {
+  @include media('large') {
     display: none;
   }
-}
-.mobile {
   &__menu {
     display: block;
     position: relative;

@@ -21,8 +21,16 @@
 	    display: none;
 	  }
 	}
-	&__right {
-
+	&__sidebar {
+		@media (max-width: 768px) {
+			flex: none;
+			@include size(2);
+		}
+		// @include media('medium') {
+		// 	flex: none;
+	 //    @include size(2);
+	 //  } bad function 'media' 
+		
 	}
 	&__logo {
 		display: flex;

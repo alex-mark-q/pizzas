@@ -7,6 +7,9 @@
 	}
 	&__layout {
 		display: flex;
+		@include media-down('small') {
+	    flex-direction: column-reverse;
+	  }
 	}
 	&__services {
 		flex: 2;

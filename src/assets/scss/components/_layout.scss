@@ -7,11 +7,14 @@
     background-color: #F0971E;
     flex: 4;
     justify-content: center;
+		@include media-between('xsmall','small') {
+	    width: 100%
+	  }
 		@include media('large') {
 	    flex: 4;
 	  }
 	  @include media-down('large') {
-	    flex: 2;
+	    flex: 3;
 	  }
 	}
 	&__slider {
@@ -19,8 +22,21 @@
     display: flex;
     align-items: center;
 		@include size(5);
+		justify-content: center;
+		@media (max-width: 992px) {
+			display: none;
+		}
+		// @include media-down('medium') {
+	 //    display: none;
+	 //  }
 		@include media-down('large') {
-	    flex: 2;
+	    flex: 1;
 	  }
+	}
+	&__onboarding {
+		flex: 4;
+    display: flex;
+    align-items: flex-end;
+		justify-content: center;
 	}
 }

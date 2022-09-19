@@ -14,15 +14,15 @@ include ../components/cart/cart
             .layout.app__layout
               .layout__services
                 .present
-                  .present__wrapper.main__bg
-                    .present__header
-                      <!--=====================================-->
-                      <!--=        Header Area Start          =-->
-                      <!--=====================================-->
-                      include ../components/header/header
-                      <!--=====================================-->
-                      <!--=        Header Area End            =-->
-                      <!--=====================================-->
+                  .present__header
+                    <!--=====================================-->
+                    <!--=        Header Area Start          =-->
+                    <!--=====================================-->
+                    include ../components/header/header
+                    <!--=====================================-->
+                    <!--=        Header Area End            =-->
+                    <!--=====================================-->
+                  .present__wrapper.present__onboarding-slider
                     .present__layout
                       .present-view__container
                         include ../components/headline/headline
@@ -31,7 +31,7 @@ include ../components/cart/cart
                             a.video-open.playbtn(src=require('@videos/pizza.mp4') tabindex='0')
                               img(inline src=require('@images/svg/pizza/svg/023-pizza-slice-6.svg'))
                               .video-main__circle
-                          p.w-trailor WATCH STREAMIT
+                          p.w-trailor WATCH Pizzas it
               .layout__slider
                 include ../components/swiper/swiper
       .main__sidebar.col-lg-1

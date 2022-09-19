@@ -16,6 +16,9 @@
 		display: -ms-flexbox;
 		display: flex;
 		padding: 0;
+		@include media-down('large') {
+	    display: none;
+	  }
 	}
 	&__menu li {
 		padding-right:	15px;

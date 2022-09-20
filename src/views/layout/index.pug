@@ -36,38 +36,3 @@ include ../components/cart/cart
                 include ../components/swiper/swiper
       .main__sidebar.col-lg-1
         include ../components/right-sidebar/right-sidebar
-
-//- .main
-  .main__container
-      .main__logo.main__bg.col-lg-1
-        include ../components/left-sidebar/left-sidebar
-      .main__left.col-lg-6.main__bg
-        <!--=====================================-->
-        <!--=        Header Area Start          =-->
-        <!--=====================================-->
-        include ../components/header/header
-        <!--=====================================-->
-        <!--=        Header Area End            =-->
-        <!--=====================================-->
-        .main__content
-          .present
-            .present__wrapper
-              .present__layout
-                include ../components/headline/headline
-                //- +watch(item.img, item.text)
-                .d-flex
-                  .playd
-                    a.video-open.playbtn(src=require('@videos/pizza.mp4') tabindex='0')
-                      img(inline src=require('@images/svg/pizza/svg/023-pizza-slice-6.svg'))
-                      .video-main__circle
-                  p.w-trailor WATCH STREAMIT
-      .main__right.col-lg-4
-        //- .swiper__wrapper
-        include ../components/swiper/swiper
-      .main__sidebar.col-lg-1
-        //- article.main__col
-        include ../components/right-sidebar/right-sidebar
-      //- .popup.popup_video-main
-        .popup__close
-        .main-video
-          video.main-video__link(controls='' src=require('@videos/pizza.mp4'))

@@ -1,4 +1,3 @@
-include ../components/mixins/rImg
 include ../components/watch/watch
 block variables
 	- const info = [{img: "@images/svg/pizza/svg/001-pizza.svg", text: "more info", color: true}];
@@ -32,7 +31,7 @@ div(class=`${attributes.main}__contents`)
 						each itemIng in ingredients_pizza
 							li.ingredients__menu-item.ingredients__close
 								a.ingredients__menu-link
-									// img(src=require(`@images/svg/pizza/svg/${itemIng.img}`))
+									img(src=require(`@images/svg/pizza/svg/${itemIng.img}`))
 	div(class=`${attributes.main}__pizzas`)
 		include ../components/pizza/pizza
 div(class=`${attributes.main}__sidebar col-lg-1`)

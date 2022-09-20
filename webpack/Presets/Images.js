@@ -5,4 +5,7 @@ module.exports = {
     test: /\.(png|jpe?g|gif|ico|svg)(\?.*)?$/,
     exclude: path.join(dirs.src, "public", "icons"),
     type: 'asset/resource'
+    // generator: {
+    //     filename: 'assets/images/[name].[hash:8][ext]',
+    // },
 }

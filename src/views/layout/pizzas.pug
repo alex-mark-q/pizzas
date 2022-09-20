@@ -1,7 +1,10 @@
 include ../components/mixins/rImg
+include ../components/watch/watch
 block variables
-	// - const ingredients_pizza = [{img: "public/images/png/vegatables/023.svg",text: "vegetables"},{img: "public/images/png/vegatables/023.svg",text: "vegetables"}];
-	- const ingredients_pizza = [{img: "@images/svg/pizza/svg/product-1-600x500.png", text: "add to cart"}];
+	- const info = [{img: "@images/svg/pizza/svg/001-pizza.svg", text: "more info", color: true}];
+	- const ingredients_pizza = [{img: "001-pizza.svg",text: "vegetables"},{img: "002-pizza-1.svg",text: "vegetables"}];
+	// - const ingredients_pizza = [{img: "@images/svg/pizza/svg/product-1-600x500.png", text: "add to cart"}];
+
 	- const attributes = {};
 	- attributes.main = 'main';
 	- attributes.pizza = 'pizza';
@@ -29,14 +32,8 @@ div(class=`${attributes.main}__contents`)
 						each itemIng in ingredients_pizza
 							li.ingredients__menu-item.ingredients__close
 								a.ingredients__menu-link
-									+render(itemIng.img)
-									// img(inline src=`${itemIng.src}`)
-									// img(inline src=require(`${item.src}`))
-									// img(src=(itemIng.src))
-									// - var path = `'@images' + ${item.src}`;
-									// img(inline src=require(path))
-									// img(inline src=`{@images+${item.src}}`)
+									// img(src=require(`@images/svg/pizza/svg/${itemIng.img}`))
 	div(class=`${attributes.main}__pizzas`)
 		include ../components/pizza/pizza
-div(class=`${attributes.main}__sidebar`).col-lg-1
+div(class=`${attributes.main}__sidebar col-lg-1`)
 	include ../components/right-sidebar/right-sidebar

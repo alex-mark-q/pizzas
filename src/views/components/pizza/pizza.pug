@@ -4,14 +4,14 @@ block content
 	each item in pizza__item
 		div(class=`${attributes.pizza}__element pizza`)
 			div(class=`${attributes.pizza}__topic`)
-				img(src=item.img)
+				img(src=require(`@images/png/400x400/${item.img}`))
 			div(class=`${attributes.pizza}__ingredients`)
 				include ../ingredients/ingredients
 					ul.header__menu.ingredients
 						each item in ingredients
 							li.ingredients__menu-item
 								a.ingredients__menu-link.gray__link-color(href=item.link)
-									img(src=item.src)
+									img(src=require(`@images/svg/ingredients/svg/${item.src}`))
 			div(class=`${attributes.pizza}__header`)
 				h4 #{item.title}
 			div(class=`${attributes.pizza}__description`)

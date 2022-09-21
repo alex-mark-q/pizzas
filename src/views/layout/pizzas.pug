@@ -1,8 +1,7 @@
 include ../components/watch/watch
 block variables
 	- const info = [{img: "@images/svg/pizza/svg/001-pizza.svg", text: "more info", color: true}];
-	- const ingredients_pizza = [{img: "001-pizza.svg",text: "vegetables"},{img: "002-pizza-1.svg",text: "vegetables"}];
-	// - const ingredients_pizza = [{img: "@images/svg/pizza/svg/product-1-600x500.png", text: "add to cart"}];
+	- const ingredients_pizza = [{img: "product-1-600x500.png",text: "vegetables"},{img: "product-2-600x500.png",text: "vegetables"},{img: "product-3-600x500.png",text: "vegetables"},{img: "product-4-600x500.png",text: "vegetables"},{img: "product-5-600x500.png",text: "vegetables"}];
 
 	- const attributes = {};
 	- attributes.main = 'main';
@@ -31,7 +30,7 @@ div(class=`${attributes.main}__contents`)
 						each itemIng in ingredients_pizza
 							li.ingredients__menu-item.ingredients__close
 								a.ingredients__menu-link
-									img(src=require(`@images/svg/pizza/svg/${itemIng.img}`))
+									img(src=require(`@images/png/vegatables/${itemIng.img}`))
 	div(class=`${attributes.main}__pizzas`)
 		include ../components/pizza/pizza
 div(class=`${attributes.main}__sidebar col-lg-1`)

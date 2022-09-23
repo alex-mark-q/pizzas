@@ -1,21 +1,14 @@
 mixin watch(img, text, bg)
-	.video-main
+	.market
 		if bg
-			.video-main__info
-				.video-main_wrapper
+			.market__info
+				.video_wrapper
 					span.play
 						a.svg(href='/')
-							//- img(src=require("@images/png/400x400/product-img-1.png"))
 							img(inline src=`${img}`)
-					.video-main__circle
-			.play-info #{text}
+			p.play-info #{text}
 		else
-			.video-main__play
-				.video-main_wrapper
-					span.play
-						a.svg(href='/')
-							img(inline src=`${img}`)
-							//- object(type="image/svg+xml" data=`${img}` width="400" height="300")
-							
-					.video-main__circle
-			.play-about #{text}
+			.market__button
+				a.market__circle(href='/')
+					img(inline src=`${img}`)
+					span.play-about #{text}

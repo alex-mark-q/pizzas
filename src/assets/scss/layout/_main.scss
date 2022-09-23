@@ -17,9 +17,9 @@
 	  justify-content: center;
 	}
 	&__aside {
-		@include media-down('large') {
-	    display: none;
-	  }
+		@media (max-width: 1300px) {
+			display: none;
+		}
 	}
 	&__sidebar {
 		@media (max-width: 768px) {

@@ -1,4 +1,5 @@
 include ../components/menu/menu
+include ../components/mobile/mobile
 
 .main__aside.col-lg-1
 	.main__logo
@@ -7,19 +8,19 @@ include ../components/menu/menu
 	.app
 		.app__content
 			.layout.app__layout
-				.layout__slider
-					.present
-						.present__wrapper.present__onboarding-picture
-							.present__header
-									//- <!--=====================================-->
-									//- <!--=        Header Area Start          =-->
-									//- <!--=====================================-->
-									//- include ../components/header/header
-									//- <!--=====================================-->
-									//- <!--=        Header Area End            =-->
-									//- <!--=====================================-->
-							.order__hero
-								include ../components/hero/hero
+				.layout__content
+					.layout__header
+						.header__content
+							+mobile()
+							ul.header__menu.menu
+								each item in menu
+									li.header__menu-item
+										a.header__menu-link.layout__link-color(href=item.link) #{item.text}
+					.layout__hero
+						.layout__present
+							.present__wrapper.present__onboarding-picture
+								.order__hero
+									include ../components/hero/hero
 				.layout__onboarding.panel__bg
 					include ../components/panel-order/panel-order
 .main__sidebar.col-lg-1

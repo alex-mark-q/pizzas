@@ -16,9 +16,13 @@
 		display: -ms-flexbox;
 		display: flex;
 		padding: 0;
-		@include media-down('large') {
-	    display: none;
-	  }
+		@media (max-width: 1300px) {
+			display: none;
+		}
+		// @include media-down('large') {
+	  //    display: none;
+	  //  } 
+	  //  method dont work
 	}
 	&__menu li {
 		padding-right:	15px;

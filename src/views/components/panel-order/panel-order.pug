@@ -10,7 +10,7 @@ include ../watch/watch
 include ../menu-cost/menu-cost
 div(class=`${attributes.panel}`)
 	div(class=`${attributes.panel}__hero`)
-		div(class=`${attributes.panel}__popular`)
+		div(class=`${attributes.panel}__ingridients`)
 			ul.popular__menu.menu
 					li.popular__menu-item
 						span.popular__menu-link
@@ -22,7 +22,7 @@ div(class=`${attributes.panel}`)
 					li.popular__menu-item
 						span.popular__menu-link
 							include svg/vegetables.svg
-		div(class=`${attributes.hero}__right`)
+		div(class=`${attributes.hero}__description`)
 			div(class=`${attributes.panel}__wrapper`)
 				.header
 					h2(class=`header__${attributes.title}`) turkey bacon swiss with guacamole
@@ -34,9 +34,8 @@ div(class=`${attributes.panel}`)
 							a.l-cost__menu-link(href=item.link) #{item.text}
 							span #{item.sale}
 			div(class=`${attributes.panel}__cart`)
-				.cart
-					each item in cart
-						+watch(item.img, item.text)
+				each item in cart
+					+watch(item.img, item.text)
 				.info
 					each item in info
 						+watch(item.img, item.text, item.color)

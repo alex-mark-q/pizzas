@@ -26,12 +26,12 @@ include ../components/cart/cart
                     .present__layout
                       .present-view__container
                         include ../components/headline/headline
-                        .d-flex
-                          .playd
-                            a.video-open.playbtn(src=require('@videos/pizza.mp4') tabindex='0')
+                        .video
+                          .video__play
+                            a.video__open.playbtn(src=require('@videos/pizza.mp4') tabindex='0')
                               img(inline src=require('@images/svg/pizza/svg/023-pizza-slice-6.svg'))
                               .video-main__circle
-                          p.w-trailor WATCH Pizzas it
+                          p.video__description WATCH Pizzas it
               .layout__slider
                 include ../components/swiper/swiper
       .main__sidebar.col-lg-1

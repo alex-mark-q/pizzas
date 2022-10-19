@@ -70,14 +70,14 @@
     position: absolute;
     display: block;
     border-radius: 50px;
-    background: rgba(#FFAB9D,.5);
+    background: #E53934;
     width: 76px;
     height: 76px;
     transition: all .3s ease;
 	}
 	&__circle:hover:before {
     width: 100%;
-    background: #ffab9d; 
+    background: #E53934; 
   }
   &__circle:active {
     transform: scale(0.96); 

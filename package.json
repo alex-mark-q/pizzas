@@ -2,6 +2,9 @@
   "name": "webpack-assembly",
   "version": "1.0.0",
   "author": "SmileDie <i@smiledie-hub.ru>",
+  "engines": {
+    "node": "16.17.0"
+  },
   "license": "MIT",
   "scripts": {
     "dev": "webpack serve --config ./webpack/Parts/DevPart.js",
